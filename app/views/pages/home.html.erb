@@ -1,0 +1,806 @@
+<!-- Hero Section -->
+<div class="relative min-h-screen overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <%= image_tag "home.png", class: "w-full h-full object-cover", alt: "Background" %>
+    <div class="absolute inset-0 bg-black/30"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="relative z-10 px-8 py-6">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="text-2xl font-light tracking-widest text-white">Seiji Takahashi</div>
+      <div class="flex items-center space-x-8">
+        <a href="#stack" class="text-white/90 hover:text-white transition-all duration-300">Stack</a>
+        <a href="#projects" class="text-white/90 hover:text-white transition-all duration-300">Projects</a>
+        <a href="#team" class="text-white/90 hover:text-white transition-all duration-300">Team</a>
+        <a href="#values" class="text-white/90 hover:text-white transition-all duration-300">Values</a>
+        <a href="#process" class="text-white/90 hover:text-white transition-all duration-300">Process</a>
+        <a href="#contact" class="text-white/90 hover:text-white transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="relative z-10 flex items-center min-h-screen px-8">
+    <div class="max-w-7xl mx-auto">
+      <h1 class="text-6xl md:text-8xl font-light text-white mb-8 tracking-tight leading-none">
+        A software studio<br>
+        for crafting digital<br>
+        experiences.
+      </h1>
+      <p class="text-xl text-white/80 max-w-xl mb-12 leading-relaxed">
+        Located in CDMX, I specialize in creating innovative software solutions 
+        that combine technical excellence with elegant design.
+      </p>
+      <a href="#contact" class="inline-flex items-center text-white border border-white/30 px-8 py-4 hover:bg-white hover:text-black transition-all duration-300">
+        Contact Me
+        <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Social Links -->
+  <%# <div class="absolute bottom-8 right-8 z-10 flex space-x-6">
+    <a href="#" class="text-white/80 hover:text-white transition-all duration-300">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
+      </svg>
+    </a>
+    <a href="#" class="text-white/80 hover:text-white transition-all duration-300">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+      </svg>
+    </a>
+    <a href="#" class="text-white/80 hover:text-white transition-all duration-300">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+      </svg>
+    </a>
+  </div> %>
+</div>
+
+<!-- Tech Stack Section -->
+<section id="stack" class="py-32 bg-black">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+      <!-- Left Column -->
+      <div>
+        <h2 class="text-4xl font-light text-white mb-8 tracking-tight">
+          Technology<br>Stack
+        </h2>
+        <p class="text-lg text-white/70 leading-relaxed mb-12">
+          I use the following techonologies to build my projects.
+        </p>
+        <a href="#work" class="inline-flex items-center text-white border border-white/30 px-8 py-4 hover:bg-white hover:text-black transition-all duration-300">
+          View Our Work
+          <svg class="w-4 h-4 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Right Column -->
+      <div class="grid grid-cols-2 gap-12">
+        <!-- Frontend -->
+        <div class="space-y-8">
+          <h3 class="text-sm font-light tracking-widest text-white/50 uppercase">Frontend</h3>
+          <ul class="space-y-6">
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              React
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Simulus JS
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              JavaScript
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Tailwind CSS
+            </li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div class="space-y-8">
+          <h3 class="text-sm font-light tracking-widest text-white/50 uppercase">Backend</h3>
+          <ul class="space-y-6">
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Ruby on Rails
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Java
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              PostgreSQL
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              GraphQL
+            </li>
+          </ul>
+        </div>
+
+        <!-- DevOps -->
+        <div class="space-y-8">
+          <h3 class="text-sm font-light tracking-widest text-white/50 uppercase">DevOps</h3>
+          <ul class="space-y-6">
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Heroku
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Docker
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              CI/CD
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Kubernetes
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tools -->
+        <div class="space-y-8">
+          <h3 class="text-sm font-light tracking-widest text-white/50 uppercase">Tools</h3>
+          <ul class="space-y-6">
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Git
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              GitHub
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              VS Code
+            </li>
+            <li class="text-white/90 hover:text-white transition-colors duration-300 flex items-center">
+              <span class="w-1.5 h-1.5 bg-white/30 rounded-full mr-3"></span>
+              Linux
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+      <!-- Left Column - Image -->
+      <div class="relative">
+        <div class="aspect-square bg-gray-100 rounded-3xl overflow-hidden">
+          <%= image_tag "pp.jpg", class: "w-full h-full object-cover", alt: "Seiji Takahashi" %>
+        </div>
+        <div class="absolute -bottom-6 -right-6 bg-black text-white px-8 py-4 rounded-2xl">
+          <span class="font-light tracking-wide">Sofwtare Developer</span>
+        </div>
+      </div>
+
+      <!-- Right Column - Content -->
+      <div class="space-y-8">
+        <h2 class="text-4xl font-light tracking-tight text-gray-900">
+          Hello, I'm Seiji Takahashi
+        </h2>
+        
+        <p class="text-xl text-gray-600 leading-relaxed">
+          As a human being whose passion is to create in code and in the kicthen, I am always eager to keep growing improving my skills. 
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-1">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium text-gray-900">Create with Purpose</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Creating it's not just about typing keys on the keyboard, but giving some purpose to the code.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-1">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium text-gray-900">Continues Improvement</h3>
+              <p class="text-gray-600 leading-relaxed">
+                In life, as in programming, we should never stop improving ourselves.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 mt-1">
+              <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium text-gray-900">When I'm not coding...</h3>
+              <p class="text-gray-600 leading-relaxed">
+                I enjoy experimenting in the kitchen, specially in Japanese cuisine. Exercising my body is just as important as exercising my mind, playing basketball is one of my favorite sports. Die-hard NBA fan, I know every fact.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section id="process" class="py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-light tracking-tight text-gray-900 mb-6">
+        My Thinking Process
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Every project / feature is a unique challenge. 
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Initial Meeting -->
+      <div class="relative group">
+        <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl font-light">1</span>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Understanding the project</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Understanding not only the "how" but also the "why" of the project is key to success. I like to have all the information before I work for better efficiency.
+          </p>
+          
+        </div>
+        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-10">
+          <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Design & Planning -->
+      <div class="relative group">
+        <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl font-light">2</span>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Code and give feedback</h3>
+          <p class="text-gray-600 leading-relaxed mb-6 items-center justify-center">
+            Work on the project but offering my insights and suggestions to improve the final product. 
+          </p>
+          
+        </div>
+        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-10">
+          <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- MVP Development -->
+      <div class="relative group">
+        <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl font-light">3</span>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Refine and iterate</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            I like to take on suggestions for improvements on the project and apply them to achieve the best result.
+          </p>
+          
+        </div>
+        <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-10">
+          <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Launch & Support -->
+      <div class="group">
+        <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-2xl font-light">4</span>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Push & Monitor</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            After confirming the quality of the code with peer reviews, push the code to production and check the performance. 
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- Values & Mission Section -->
+<section id="values" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-light tracking-tight text-gray-900 mb-6">
+        My values
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        I believe in creating not only the best product, but a good working environment arround me.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Quality & Craftsmanship -->
+      <div class="group">
+        <div class="bg-gray-50 rounded-3xl p-8 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Equality</h3>
+          <p class="text-gray-600 leading-relaxed">
+            As a human being, I believe that everyone is to be treated with the respect and professionalism they deserve. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Scalable Solutions -->
+      <div class="group">
+        <div class="bg-gray-50 rounded-3xl p-8 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Consistency</h3>
+          <p class="text-gray-600 leading-relaxed">
+            I believe that consistency is the secret to mastering any skillset. I chase perfection while being humble.
+          </p>
+        </div>
+      </div>
+
+      <!-- Collaborative Approach -->
+      <div class="group">
+        <div class="bg-gray-50 rounded-3xl p-8 h-full">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-medium text-gray-900 mb-4">Teamwork</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We didn't get where we are as humans alone, we worked together towards a common goal. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-2xl font-light text-gray-900 mb-6">
+          Personal growth
+        </h3>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          I like to keep a balance in my life. Family, friends, work, hobbies. Learning little things from everything I experience in my daily life, whether those little things are mistakes or achievements, they are all part of my personal growth. 
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Showcase Section -->
+<section id="projects" class="min-h-screen py-16 md:py-32 bg-black">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 h-full flex flex-col">
+    <div class="text-center mb-12 md:mb-20">
+      <h2 class="text-3xl md:text-4xl font-light tracking-tight text-white mb-4 md:mb-6">
+        My personal projects*
+      </h2>
+      <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed px-4">
+        *These are some of the projects I've worked on in my free time with subjects I find interesting to me.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 flex-grow">
+      <!-- Restaurant Landing Page -->
+      <div class="group relative h-full">
+        <div class="aspect-[4/3] md:aspect-[16/9] h-full bg-gray-900 rounded-2xl md:rounded-3xl overflow-hidden">
+          <%= image_tag "japanese_castle.png", class: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500", alt: "Restaurant Landing Page" %>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 md:p-8">
+            <div>
+              <h3 class="text-xl md:text-2xl font-light text-white mb-2">Restaurant Landing Page</h3>
+              <p class="text-sm md:text-base text-white/80 mb-4">A modern, elegant design showcasing a premium dining experience with smooth animations and interactive elements.</p>
+              <a href="/restaurant" class="inline-flex items-center text-white border border-white/30 px-4 md:px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+                View Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Woodworking Studio Landing Page -->
+      <div class="group relative h-full">
+        <div class="aspect-[4/3] md:aspect-[16/9] h-full bg-gray-900 rounded-2xl md:rounded-3xl overflow-hidden">
+          <%= image_tag "rea5.png", class: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500", alt: "Woodworking Studio Landing Page" %>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 md:p-8">
+            <div>
+              <h3 class="text-xl md:text-2xl font-light text-white mb-2">Woodworking Studio</h3>
+              <p class="text-sm md:text-base text-white/80 mb-4">A minimalist design that captures the essence of craftsmanship, featuring clean typography and subtle animations.</p>
+              <a href="/real_estate" class="inline-flex items-center text-white border border-white/30 px-4 md:px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+                View Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Profile -->
+      <div class="group relative md:col-span-2 h-full">
+        <div class="min-h-[500px] md:min-h-[600px] bg-gray-900 rounded-2xl md:rounded-3xl overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-800 flex items-start md:items-center p-6 md:p-12 overflow-y-auto">
+            <div class="w-full">
+              <div class="flex items-center mb-6 md:mb-8">
+                <svg class="w-8 h-8 md:w-10 md:h-10 text-white mr-3 md:mr-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <h3 class="text-2xl md:text-3xl font-light text-white">GitHub Profile</h3>
+              </div>
+              <p class="text-base md:text-lg text-white/80 mb-6 md:mb-8 max-w-2xl">
+                Ruby on Rails Developer passionate about building scalable web applications. Based in Mexico City, I focus on creating solutions that improve life through technology.
+              </p>
+              <div class="flex flex-wrap gap-3 md:gap-4 mb-6 md:mb-8">
+                <div class="flex items-center text-white/80 text-sm md:text-base bg-white/10 px-3 py-1.5 rounded-full">
+                  <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>8 Repositories</span>
+                </div>
+                <div class="flex items-center text-white/80 text-sm md:text-base bg-white/10 px-3 py-1.5 rounded-full">
+                  <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>10 Stars</span>
+                </div>
+                <div class="flex items-center text-white/80 text-sm md:text-base bg-white/10 px-3 py-1.5 rounded-full">
+                  <svg class="w-4 h-4 md:w-5 md:h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>Pull Shark x2</span>
+                </div>
+              </div>
+              <div class="mb-6 md:mb-8">
+                <h4 class="text-base md:text-lg font-medium text-white mb-3 md:mb-4">Featured Projects</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+                  <a href="https://github.com/Takahashi-Seiji/rails" target="_blank" class="block p-3 md:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-300">
+                    <h5 class="text-white font-medium mb-1 md:mb-2 text-sm md:text-base">Ruby on Rails</h5>
+                    <p class="text-white/70 text-xs md:text-sm">Contributor to the Ruby on Rails framework, working on core features and improvements</p>
+                  </a>
+                  <a href="https://github.com/Takahashi-Seiji/SOPH-AI" target="_blank" class="block p-3 md:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-300">
+                    <h5 class="text-white font-medium mb-1 md:mb-2 text-sm md:text-base">SOPH-AI</h5>
+                    <p class="text-white/70 text-xs md:text-sm">AI-powered personalized learning platform for enhanced educational experiences</p>
+                  </a>
+                  <a href="https://github.com/Takahashi-Seiji/vida-en-manada" target="_blank" class="block p-3 md:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-300">
+                    <h5 class="text-white font-medium mb-1 md:mb-2 text-sm md:text-base">Vida en Manada</h5>
+                    <p class="text-white/70 text-xs md:text-sm">Community-driven platform for reporting and finding missing pets</p>
+                  </a>
+                  <a href="https://github.com/Takahashi-Seiji/friend_chat" target="_blank" class="block p-3 md:p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors duration-300">
+                    <h5 class="text-white font-medium mb-1 md:mb-2 text-sm md:text-base">Inventar-io</h5>
+                    <p class="text-white/70 text-xs md:text-sm">Restaurant inventory management system with real-time tracking</p>
+                  </a>
+                </div>
+              </div>
+              <a href="https://github.com/Takahashi-Seiji" target="_blank" class="inline-flex items-center text-white border border-white/30 px-4 md:px-6 py-2 md:py-3 rounded-full hover:bg-white hover:text-black transition-all duration-300 text-sm md:text-base">
+                Visit GitHub
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-light tracking-tight text-gray-900 mb-6">
+        Let's Work Together
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Whether you have a project in mind or just want to chat about possibilities, 
+        I'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <!-- Contact Information -->
+      <div class="space-y-8">
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Email</h3>
+            <a href="mailto:takahashiseiji18@gmail.com" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+              takahashiseiji18@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/seiji-takahashi14" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+              linkedin.com/in/seiji-takahashi14
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Location</h3>
+            <p class="text-gray-600">CDMX (Remote)</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="w-12 h-12 bg-black text-white rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">GitHub</h3>
+            <a href="https://github.com/Takahashi-Seiji" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+              github.com/Takahashi-Seiji
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <%# <div class="bg-white rounded-3xl p-8 shadow-sm">
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-black text-white px-8 py-4 rounded-full hover:bg-gray-900 transition-all duration-300">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section> %>
+
+<!-- Back to Top Button -->
+<button id="backToTop" 
+        class="fixed bottom-8 right-8 bg-black text-white p-4 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-gray-900 z-50"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+  </svg>
+</button>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  p {
+    animation: fadeIn 1s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  a {
+    animation: fadeIn 1s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .tech-stack li {
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .tech-stack li:nth-child(1) { animation-delay: 0.1s; }
+  .tech-stack li:nth-child(2) { animation-delay: 0.2s; }
+  .tech-stack li:nth-child(3) { animation-delay: 0.3s; }
+  .tech-stack li:nth-child(4) { animation-delay: 0.4s; }
+
+  @keyframes fadeInScale {
+    from { 
+      opacity: 0; 
+      transform: scale(0.95);
+    }
+    to { 
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .team-section {
+    animation: fadeInScale 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .process-card {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .process-card:nth-child(1) { animation-delay: 0.1s; }
+  .process-card:nth-child(2) { animation-delay: 0.2s; }
+  .process-card:nth-child(3) { animation-delay: 0.3s; }
+  .process-card:nth-child(4) { animation-delay: 0.4s; }
+
+  @keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .project-card {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .project-card:nth-child(1) { animation-delay: 0.1s; }
+  .project-card:nth-child(2) { animation-delay: 0.2s; }
+  .project-card:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  /* Back to Top Button Styles */
+  #backToTop {
+    transform: translateY(20px);
+  }
+
+  #backToTop.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+</style>
+
+<script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add smooth scroll offset for fixed header
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const headerOffset = 100;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Back to Top Button
+  const backToTopButton = document.getElementById('backToTop');
+  
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+});
+</script>

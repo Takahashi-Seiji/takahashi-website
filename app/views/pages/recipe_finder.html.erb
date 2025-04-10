@@ -1,0 +1,300 @@
+<!-- Recipe Finder Section -->
+<div class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+  <!-- Hero Section -->
+  <div class="relative py-32 bg-black overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiA0NGM2LjYyNyAwIDEyLTUuMzczIDEyLTEycy01LjM3My0xMi0xMi0xMi0xMiA1LjM3My0xMiAxMiA1LjM3MyAxMiAxMiAxMnptMC0yYy01LjUyMyAwLTEwLTQuNDc3LTEwLTEwUzMwLjQ3NyAyMiAzNiAyMnMxMCA0LjQ3NyAxMCAxMC00LjQ3NyAxMC0xMCAxMHoiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+')]"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-8 relative z-10">
+      <h1 class="text-4xl md:text-6xl font-light text-white mb-8 tracking-tight">
+        Recipe Finder
+      </h1>
+      <p class="text-xl text-white/80 max-w-2xl mb-12 leading-relaxed">
+        Enter the ingredients you have at home, and we'll find delicious recipes for you to try.
+      </p>
+      
+      <!-- Popular Ingredients -->
+      <div class="flex flex-wrap gap-3">
+        <button class="popular-ingredient px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm">
+          Chicken
+        </button>
+        <button class="popular-ingredient px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm">
+          Rice
+        </button>
+        <button class="popular-ingredient px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm">
+          Pasta
+        </button>
+        <button class="popular-ingredient px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm">
+          Tomato
+        </button>
+        <button class="popular-ingredient px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20 transition-all duration-300 text-sm">
+          Cheese
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Section -->
+  <div class="max-w-7xl mx-auto px-8 py-16">
+    <div class="bg-white rounded-3xl p-8 shadow-sm">
+      <div class="flex flex-col md:flex-row gap-4 mb-8">
+        <div class="flex-1 relative">
+          <input type="text" 
+                 id="ingredientInput" 
+                 placeholder="Enter ingredients (comma separated)" 
+                 class="w-full px-6 py-4 rounded-xl border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300 pr-12">
+          <div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+        <button id="searchButton" 
+                class="bg-black text-white px-8 py-4 rounded-xl hover:bg-gray-900 transition-all duration-300 flex items-center justify-center group">
+          <span>Search Recipes</span>
+          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-4 mb-8">
+        <select id="cuisineFilter" class="px-4 py-2 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300">
+          <option value="">All Cuisines</option>
+          <option value="italian">Italian</option>
+          <option value="mexican">Mexican</option>
+          <option value="indian">Indian</option>
+          <option value="chinese">Chinese</option>
+          <option value="japanese">Japanese</option>
+        </select>
+        <select id="dietFilter" class="px-4 py-2 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300">
+          <option value="">All Diets</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="gluten-free">Gluten Free</option>
+          <option value="keto">Keto</option>
+        </select>
+        <select id="timeFilter" class="px-4 py-2 rounded-lg border border-gray-200 focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-all duration-300">
+          <option value="">Any Time</option>
+          <option value="15">Under 15 min</option>
+          <option value="30">Under 30 min</option>
+          <option value="45">Under 45 min</option>
+          <option value="60">Under 1 hour</option>
+        </select>
+      </div>
+
+      <!-- Loading State -->
+      <div id="loadingState" class="hidden text-center py-16">
+        <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-gray-900 border-t-transparent"></div>
+        <p class="mt-4 text-gray-600 text-lg">Finding delicious recipes...</p>
+      </div>
+
+      <!-- Results Section -->
+      <div id="recipeResults" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Recipe cards will be inserted here -->
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResults" class="hidden text-center py-16">
+        <svg class="w-20 h-20 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <h3 class="text-2xl font-medium text-gray-900 mb-2">No recipes found</h3>
+        <p class="text-gray-600 text-lg">Try different ingredients or check your spelling.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recipe Card Template -->
+<template id="recipeCardTemplate">
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+    <div class="aspect-[4/3] bg-gray-100 relative overflow-hidden">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="" alt="Recipe image">
+      <div class="absolute top-4 right-4">
+        <button class="save-recipe bg-white/90 text-gray-900 px-3 py-1 rounded-full text-sm font-medium hover:bg-white transition-all duration-300">
+          Save
+        </button>
+      </div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-medium text-gray-900 mb-2 group-hover:text-gray-700 transition-colors duration-300"></h3>
+      <div class="flex items-center text-sm text-gray-500 mb-4">
+        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span class="cooking-time"></span>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <!-- Used ingredients will be inserted here -->
+      </div>
+      <div class="flex items-center justify-between">
+        <a href="#" target="_blank" class="inline-flex items-center text-black border border-gray-200 px-4 py-2 rounded-lg hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-all duration-300">
+          View Recipe
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+        <div class="flex items-center text-gray-500">
+          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
+          <span class="likes-count text-sm"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .recipe-card {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchButton = document.getElementById('searchButton');
+  const ingredientInput = document.getElementById('ingredientInput');
+  const recipeResults = document.getElementById('recipeResults');
+  const loadingState = document.getElementById('loadingState');
+  const noResults = document.getElementById('noResults');
+  const recipeCardTemplate = document.getElementById('recipeCardTemplate');
+  const popularIngredients = document.querySelectorAll('.popular-ingredient');
+  const cuisineFilter = document.getElementById('cuisineFilter');
+  const dietFilter = document.getElementById('dietFilter');
+  const timeFilter = document.getElementById('timeFilter');
+
+  const API_KEY = '89de06407ece4d03966464f07661fcf5';
+
+  // Add popular ingredients to input
+  popularIngredients.forEach(button => {
+    button.addEventListener('click', () => {
+      const ingredient = button.textContent.trim();
+      const currentInput = ingredientInput.value.trim();
+      
+      if (currentInput) {
+        ingredientInput.value = `${currentInput}, ${ingredient}`;
+      } else {
+        ingredientInput.value = ingredient;
+      }
+    });
+  });
+
+  async function searchRecipes() {
+    const ingredients = ingredientInput.value.trim();
+    if (!ingredients) return;
+
+    // Show loading state
+    loadingState.classList.remove('hidden');
+    recipeResults.innerHTML = '';
+    noResults.classList.add('hidden');
+
+    try {
+      let url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=9&apiKey=${API_KEY}`;
+      
+      // Add filters if selected
+      if (cuisineFilter.value) url += `&cuisine=${cuisineFilter.value}`;
+      if (dietFilter.value) url += `&diet=${dietFilter.value}`;
+      if (timeFilter.value) url += `&maxReadyTime=${timeFilter.value}`;
+
+      const response = await fetch(url);
+      const recipes = await response.json();
+
+      // Hide loading state
+      loadingState.classList.add('hidden');
+
+      if (recipes.length === 0) {
+        noResults.classList.remove('hidden');
+        return;
+      }
+
+      // Display recipes
+      recipes.forEach(recipe => {
+        const recipeCard = recipeCardTemplate.content.cloneNode(true);
+        
+        // Set recipe image
+        const img = recipeCard.querySelector('img');
+        img.src = recipe.image;
+        img.alt = recipe.title;
+
+        // Set recipe title
+        recipeCard.querySelector('h3').textContent = recipe.title;
+
+        // Set cooking time (if available)
+        const cookingTime = recipeCard.querySelector('.cooking-time');
+        cookingTime.textContent = recipe.readyInMinutes ? `${recipe.readyInMinutes} minutes` : 'Time not specified';
+
+        // Set used ingredients
+        const ingredientsContainer = recipeCard.querySelector('.flex-wrap');
+        recipe.usedIngredients.forEach(ingredient => {
+          const ingredientTag = document.createElement('span');
+          ingredientTag.className = 'px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm';
+          ingredientTag.textContent = ingredient.name;
+          ingredientsContainer.appendChild(ingredientTag);
+        });
+
+        // Set recipe link
+        const recipeLink = recipeCard.querySelector('a');
+        recipeLink.href = `https://spoonacular.com/recipes/${recipe.title.replace(/\s+/g, '-').toLowerCase()}-${recipe.id}`;
+
+        // Set likes count
+        const likesCount = recipeCard.querySelector('.likes-count');
+        likesCount.textContent = recipe.likes || '0';
+
+        // Add animation class
+        const cardElement = recipeCard.querySelector('.bg-white');
+        cardElement.classList.add('recipe-card');
+
+        recipeResults.appendChild(recipeCard);
+      });
+    } catch (error) {
+      console.error('Error fetching recipes:', error);
+      loadingState.classList.add('hidden');
+      noResults.classList.remove('hidden');
+    }
+  }
+
+  searchButton.addEventListener('click', searchRecipes);
+
+  // Allow searching with Enter key
+  ingredientInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      searchRecipes();
+    }
+  });
+
+  // Add filter change listeners
+  [cuisineFilter, dietFilter, timeFilter].forEach(filter => {
+    filter.addEventListener('change', searchRecipes);
+  });
+});
+</script> 
